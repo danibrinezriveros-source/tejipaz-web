@@ -1,17 +1,17 @@
 export const history = [
   {
-    title: "Montañas",
+    title: "Las montañas",
     description:
-      "Paisajes que han acompañado generaciones de familias campesinas.",
+      "Las montañas han protegido durante décadas el paisaje cafetero y las historias que nacen entre sus caminos.",
   },
   {
-    title: "Café",
+    title: "El café",
     description:
-      "Un cultivo que conecta tradición, economía y memoria.",
+      "Cada cosecha representa el trabajo de familias que han encontrado en el café una forma de preservar su identidad.",
   },
   {
-    title: "Comunidad",
+    title: "La comunidad",
     description:
-      "Las personas son quienes mantienen viva la historia.",
+      "La memoria permanece viva porque las personas continúan compartiendo sus conocimientos y tradiciones.",
   },
 ];

@@ -1,23 +1,33 @@
 type Props = {
   title: string;
   description: string;
+  reverse?: boolean;
 };
 
 export default function HistoryCard({
   title,
   description,
+  reverse = false,
 }: Props) {
   return (
-    <article className="rounded-3xl border border-stone-200 p-10">
+    <article
+      className={`grid items-center gap-16 lg:grid-cols-2 ${
+        reverse ? "lg:[&>*:first-child]:order-2" : ""
+      }`}
+    >
+      <div className="aspect-[4/5] rounded-3xl bg-stone-200" />
 
-      <h3 className="text-3xl font-light">
-        {title}
-      </h3>
+      <div>
 
-      <p className="mt-6 leading-8 text-stone-600">
-        {description}
-      </p>
+        <h3 className="text-4xl font-light">
+          {title}
+        </h3>
 
+        <p className="mt-8 text-lg leading-9 text-stone-600">
+          {description}
+        </p>
+
+      </div>
     </article>
   );
 }

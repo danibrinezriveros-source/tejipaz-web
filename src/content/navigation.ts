@@ -8,16 +8,16 @@ export const navigation = [
     href: "/nosotros",
   },
   {
+    name: "Granada",
+    href: "/granada",
+  },
+  {
     name: "Café",
     href: "/cafe",
   },
   {
     name: "Experiencias",
     href: "/experiencias",
-  },
-  {
-    name: "Granada",
-    href: "/granada",
   },
   {
     name: "Contacto",
