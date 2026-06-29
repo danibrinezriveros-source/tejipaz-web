@@ -7,14 +7,14 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-white ">
       <Container>
-        <div className="relative flex h-16 lg:h-24 items-center">
+        <div className="relative flex h-16 items-center lg:h-24">
           <Logo />
 
-          <div className="ml-auto">
-            <Navigation />
-          </div>
+<div className="ml-auto hidden md:block">
+  <Navigation />
+</div>
 
-          <div className="ml-4 flex md:hidden">
+<div className="ml-auto md:hidden">
   <MobileMenu />
 </div>
         </div>

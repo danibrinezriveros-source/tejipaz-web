@@ -15,8 +15,9 @@ export default function ImageCard({
         src={src}
         alt={alt}
         fill
-        className="object-cover"
         priority
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover transition-transform duration-700 hover:scale-105"
       />
     </div>
   );
