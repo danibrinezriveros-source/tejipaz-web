@@ -2,14 +2,8 @@
 
 import { useState } from "react";
 
-const links = [
-  "Inicio",
-  "Nosotros",
-  "Café",
-  "Experiencias",
-  "Granada",
-  "Contacto",
-];
+import Link from "next/link";
+import { navigation } from "@/src/content/navigation";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -48,16 +42,17 @@ export default function MobileMenu() {
       {open && (
         <div className="absolute left-0 top-20 w-full border-t border-stone-200 bg-white shadow-lg md:hidden">
           <nav className="flex flex-col">
-            {links.map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="border-b border-stone-100 px-6 py-4 text-stone-700 hover:bg-stone-50"
-                onClick={() => setOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
+           {navigation.map((item) => (
+  <Link
+    key={item.href}
+    href={item.href}
+    onClick={() => setOpen(false)}
+    className="border-b border-stone-100 px-6 py-4 text-sm text-stone-700 transition-colors hover:bg-stone-50 hover:text-stone-900"
+  >
+    {item.name}
+  </Link>
+))}
+        
           </nav>
         </div>
       )}
