@@ -5,14 +5,18 @@ import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-stone-200 bg-white/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-stone-200 bg-white ">
       <Container>
-        <div className="relative flex h-24 items-center justify-between">
+        <div className="relative flex h-16 lg:h-24 items-center">
           <Logo />
 
-          <Navigation />
+          <div className="ml-auto">
+            <Navigation />
+          </div>
 
-          <MobileMenu />
+          <div className="ml-4 flex md:hidden">
+  <MobileMenu />
+</div>
         </div>
       </Container>
     </header>

@@ -3,16 +3,16 @@ import ImageCard from "@/src/components/ui/ImageCard";
 
 export default function MemorySection() {
   return (
-    <section className="bg-stone-50 py-32">
+    <section className="bg-stone-50 py-20 lg:py-20 lg:py-32">
       <Container>
-        <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-16 lg:grid-cols-1 lg:grid-cols-1 lg:grid-cols-2 lg:items-center">
 
           <div>
             <span className="text-sm uppercase tracking-[0.3em] text-stone-500">
               Nuestra esencia
             </span>
 
-            <h2 className="mt-6 text-4xl font-light text-stone-900 md:text-5xl">
+            <h2 className="mt-6 text-4xl font-light text-stone-900 md:text-3xl md:text-4xl lg:text-5xl">
               Más que café,
               <br />
               conservamos historias.

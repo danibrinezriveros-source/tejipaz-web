@@ -11,7 +11,7 @@ export default function HistoryCard({
 }: Props) {
   return (
     <article
-      className={`grid items-center gap-16 lg:grid-cols-2 ${
+      className={`grid items-center gap-16 lg:grid-cols-1 lg:grid-cols-1 lg:grid-cols-2 ${
         reverse ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >
@@ -23,7 +23,7 @@ export default function HistoryCard({
           {title}
         </h3>
 
-        <p className="mt-8 text-lg leading-9 text-stone-600">
+        <p className="mt-8 text-lg leading-8 lg:leading-9 text-stone-600">
           {description}
         </p>
 

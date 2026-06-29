@@ -2,7 +2,7 @@ export default function ContactInfo() {
   return (
     <section className="bg-white py-24">
 
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:px-8 md:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
         <article>
           <h3 className="text-2xl font-light">Ubicación</h3>

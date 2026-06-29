@@ -4,7 +4,7 @@ import ManifestoSignature from "./ManifestoSignature";
 export default function Manifesto() {
   return (
     <section className="border-b border-stone-200 bg-stone-50">
-      <div className="mx-auto flex min-h-screen max-w-5xl flex-col justify-center px-6 py-32">
+      <div className="mx-auto flex min-h-[90vh] lg:min-h-screen max-w-5xl flex-col justify-center px-6 lg:px-8 py-20 lg:py-20 lg:py-32">
 
         <ManifestoText />
 

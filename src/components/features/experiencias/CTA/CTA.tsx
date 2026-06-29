@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="bg-stone-950 py-32 text-white">
+    <section className="bg-stone-950 py-20 lg:py-20 lg:py-32 text-white">
 
-      <div className="mx-auto max-w-4xl px-6 text-center">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
 
-        <h2 className="text-5xl font-light leading-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight">
           El viaje continúa.
         </h2>
 
-        <p className="mx-auto mt-8 max-w-2xl text-lg leading-9 text-stone-300">
+        <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 lg:leading-9 text-stone-300">
           Descubre cómo Tejipaz transforma el café en una experiencia
           que permanece en la memoria.
         </p>

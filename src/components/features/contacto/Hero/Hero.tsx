@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="flex min-h-[70vh] items-center justify-center bg-stone-950 text-white">
-      <div className="mx-auto max-w-5xl px-6 text-center">
+      <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
 
         <span className="text-xs uppercase tracking-[0.35em] text-stone-400">
           Contacto
@@ -11,7 +11,7 @@ export default function Hero() {
           Conversemos.
         </h1>
 
-        <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-stone-300">
+        <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 lg:leading-9 text-stone-300">
           Si quieres vivir la experiencia Tejipaz, estaremos felices de ayudarte.
         </p>
 

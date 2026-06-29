@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="flex min-h-screen items-center justify-center bg-stone-950 text-white">
-      <div className="max-w-5xl px-6 text-center">
+    <section className="flex min-h-[90vh] lg:min-h-screen items-center justify-center bg-stone-950 text-white">
+      <div className="max-w-5xl px-6 lg:px-8 text-center">
 
         <span className="uppercase tracking-[0.35em] text-stone-400">
           Capítulo III
@@ -11,7 +11,7 @@ export default function Hero() {
           El café.
         </h1>
 
-        <p className="mx-auto mt-10 max-w-3xl text-xl leading-9 text-stone-300">
+        <p className="mx-auto mt-10 max-w-3xl text-xl leading-8 lg:leading-9 text-stone-300">
           Cada taza comienza mucho antes de llegar a tus manos.
           Comienza en una historia.
         </p>

@@ -2,7 +2,7 @@ export default function ContactForm() {
   return (
     <section className="bg-stone-50 py-24">
 
-      <div className="mx-auto max-w-4xl px-6">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8">
 
         <form className="space-y-6">
 

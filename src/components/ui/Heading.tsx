@@ -11,7 +11,7 @@ export default function Heading({
 }: HeadingProps) {
   return (
     <h1
-      className={`text-4xl font-bold tracking-tight text-stone-900 md:text-5xl lg:text-6xl ${className}`}
+      className={`text-4xl font-bold tracking-tight text-stone-900 md:text-3xl md:text-4xl lg:text-5xl lg:text-6xl ${className}`}
     >
       {children}
     </h1>

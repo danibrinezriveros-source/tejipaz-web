@@ -2,19 +2,19 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="bg-stone-900 py-32 text-white">
+    <section className="bg-stone-900 py-20 lg:py-20 lg:py-32 text-white">
 
-      <div className="mx-auto max-w-5xl px-6 text-center">
+      <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
 
         <span className="text-xs uppercase tracking-[0.35em] text-stone-400">
           Continúa el recorrido
         </span>
 
-        <h2 className="mt-6 text-5xl font-light leading-tight">
+        <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-light leading-tight">
           Ahora vive la experiencia.
         </h2>
 
-        <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-stone-300">
+        <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 lg:leading-9 text-stone-300">
           Descubre los recorridos que conectan el café con las historias
           de Granada y su comunidad.
         </p>
