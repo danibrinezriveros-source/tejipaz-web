@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Territory() {
   return (
     <section className="bg-white py-20 lg:py-20 lg:py-32">
@@ -18,12 +19,23 @@ export default function Territory() {
             Es el lugar donde familias, caficultores y visitantes
             construyen nuevos recuerdos alrededor del café.
           </p>
+          
 
         </div>
 
-        <div className="flex min-h-[500px] items-center justify-center rounded-3xl bg-stone-100">
-          MAPA ILUSTRADO
+        <div className="relative min-h-[500px] overflow-hidden rounded-3xl shadow-xl">
+
+          <Image
+            src= "/images/granada/granada.jpg"
+            alt="montañas de granada"
+            fill
+            className="object-cover transition-transform duration-700 hover:scale-105"
+            sizes="(max-width:768px) 100vw, 50vw"
+            priority
+          />
+
         </div>
+        
 
       </div>
     </section>

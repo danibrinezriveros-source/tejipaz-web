@@ -24,9 +24,15 @@ export const timeline = [
       "Se inaugura la tienda y el laboratorio de café, consolidando un espacio para compartir historias.",
   },
   {
-    year: "2020 - Hoy",
+    year: "2020 ",
     title: "Una historia que sigue creciendo",
     description:
       "Reconocimientos, exportaciones, sostenibilidad y construcción de paz continúan ampliando el alcance de Tejipaz.",
   },
+  {
+    year: "2025",
+    title: "Nace el café de la memoria provenza",
+    description:
+      "Se amplía la red de distribución y se reciben reconocimientos nacionales e internacionales por el impacto social.",
+  }
 ];
