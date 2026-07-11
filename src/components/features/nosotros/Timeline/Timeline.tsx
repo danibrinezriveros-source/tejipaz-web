@@ -3,7 +3,7 @@ import { timeline } from "./timeline.data";
 
 export default function Timeline() {
   return (
-    <section className="bg-white py-20 lg:py-20 lg:py-32">
+    <section className={`bg-white ${spacing.section}`}>py-20 lg:py-20 lg:py-32">
 
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
