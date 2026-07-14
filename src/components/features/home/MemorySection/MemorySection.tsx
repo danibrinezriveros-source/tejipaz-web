@@ -1,35 +1,59 @@
+import Image from "next/image";
 import { Container } from "@/src/components/ui";
-import ImageCard from "@/src/components/ui/ImageCard";
+import { spacing, typography } from "@/src/lib/design";
 
 export default function MemorySection() {
   return (
-    <section className="bg-stone-50 py-20 lg:py-20 lg:py-32">
+    <section className={`bg-stone-50 ${spacing.section}`}>
       <Container>
-        <div className="grid gap-16 lg:grid-cols-1 lg:grid-cols-1 lg:grid-cols-2 lg:items-center">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
 
-          <div>
-            <span className="text-sm uppercase tracking-[0.3em] text-stone-500">
-              Nuestra esencia
-            </span>
-
-            <h2 className="mt-6 text-4xl font-light text-stone-900 md:text-3xl md:text-4xl lg:text-5xl">
-              Más que café,
-              <br />
-              conservamos historias.
-            </h2>
-
-            <p className="mt-8 text-lg leading-8 text-stone-600">
-              Tejipaz nace del deseo de conectar personas, territorio y tradición.
-              Cada taza representa el trabajo de quienes cultivan el café y la
-              memoria de una comunidad que continúa construyendo paz.
-            </p>
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-xl">
+            <Image
+              src="/images/home/memory.jpg"
+              alt="Tejipaz - Café y memoria"
+              fill
+              className="object-cover transition-transform duration-700 hover:scale-105"
+              sizes="(max-width:768px) 100vw, 50vw"
+            />
           </div>
 
-          <div className="flex justify-center">
-            <ImageCard
-  src="/images/home/memory.jpg"
-  alt="Paisaje de Tejipaz"
-/>
+          <div>
+
+            <span className={`${typography.label} text-stone-500`}>
+              DESDE GRANADA · ANTIOQUIA
+            </span>
+
+            <h2 className={`${typography.title} mt-6 max-w-xl`}>
+              Todo comienza con una taza,
+              <br />
+              pero nunca termina ahí.
+            </h2>
+
+            <p className={`${typography.body} mt-8 max-w-xl text-stone-600`}>
+              Tejipaz nació para conectar personas, territorio y memoria.
+              Cada café representa el trabajo de familias, la riqueza de
+              Granada y el deseo de compartir aquello que permanece
+              cuando el tiempo pasa.
+            </p>
+
+            <button
+              className="
+                mt-12
+                rounded-full
+                border
+                border-stone-900
+                px-8
+                py-4
+                transition-all
+                duration-300
+                hover:bg-stone-900
+                hover:text-white
+              "
+            >
+              Conocer nuestra historia
+            </button>
+
           </div>
 
         </div>

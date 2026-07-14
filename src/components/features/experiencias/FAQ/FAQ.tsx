@@ -3,7 +3,7 @@ import { faq } from "./faq.data";
 
 export default function FAQ() {
   return (
-    <section className="bg-stone-50 py-20 lg:py-20 lg:py-32">
+    <section className="bg-white py-20 lg:py-32"> 
 
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
 

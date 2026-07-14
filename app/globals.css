@@ -2,14 +2,21 @@
 
 @theme {
 
+  /* Tipografía */
+
   --font-sans: var(--font-poppins);
 
-}
+  /* Colores */
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+  --color-background: #F7F4EE;
+  --color-surface: #FFFFFF;
+
+  --color-text: #1F1F1F;
+  --color-muted: #6E6A66;
+
+  --color-primary: #1F4F73;
+  --color-accent: #C8A35F;
+
 }
 
 html{
@@ -17,7 +24,11 @@ html{
 }
 
 body{
+  background:var(--color-background);
+  color:var(--color-text);
+}
 
-  overflow-x:hidden;
-
+::selection{
+  background:var(--color-primary);
+  color:white;
 }

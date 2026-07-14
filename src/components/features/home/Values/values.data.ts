@@ -1,20 +1,20 @@
 export const values = [
   {
     number: "01",
-    title: "Memoria",
+    title: "Territorio",
     description:
-      "Cada taza recuerda las historias que dieron origen al territorio.",
+      "Todo comienza en las montañas de Granada, donde el café nace entre paisajes, tradición y biodiversidad.",
   },
   {
     number: "02",
     title: "Comunidad",
     description:
-      "Trabajamos junto a familias campesinas y procesos colectivos.",
+      "Cada taza representa el trabajo de familias, productores y personas que mantienen vivo el valor del campo.",
   },
   {
     number: "03",
-    title: "Esperanza",
+    title: "Memoria",
     description:
-      "El café se convierte en un puente entre el pasado y el futuro.",
+      "El café conserva historias, conecta generaciones y mantiene vivo el recuerdo de quienes han construido este territorio.",
   },
 ];

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Reservation() {
   return (
-    <section className="bg-white py-20 lg:py-20 lg:py-32">
+     <section className="bg-white py-20 lg:py-32"> 
 
       <div className="mx-auto max-w-5xl rounded-[40px] bg-stone-900 px-10 py-20 text-center text-white">
 

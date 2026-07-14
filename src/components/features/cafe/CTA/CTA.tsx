@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="bg-stone-900 py-20 lg:py-20 lg:py-32 text-white">
+    <section className="bg-white py-20 lg:py-32"> 
 
       <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
 

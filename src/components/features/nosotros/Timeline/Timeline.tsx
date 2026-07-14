@@ -3,8 +3,7 @@ import { timeline } from "./timeline.data";
 
 export default function Timeline() {
   return (
-    <section className={`bg-white ${spacing.section}`}>py-20 lg:py-20 lg:py-32">
-
+    <section className="bg-white py-20 lg:py-32">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
 
         <span className="uppercase tracking-[0.35em] text-stone-500">
@@ -21,7 +20,6 @@ export default function Timeline() {
         </p>
 
         <div className="mt-24">
-
           {timeline.map((item, index) => (
             <TimelineItem
               key={item.year}
@@ -29,11 +27,9 @@ export default function Timeline() {
               last={index === timeline.length - 1}
             />
           ))}
-
         </div>
 
       </div>
-
     </section>
   );
 }

@@ -1,27 +1,31 @@
-interface ValuesCardProps {
+type Props = {
   number: string;
   title: string;
   description: string;
-}
+};
 
 export default function ValuesCard({
   number,
   title,
   description,
-}: ValuesCardProps) {
+}: Props) {
   return (
-    <article className="border-l-2 border-stone-300 pl-6">
-      <span className="text-sm tracking-[0.3em] text-stone-400">
+    <article className="group">
+
+      <span className="text-5xl font-light text-[#D9B56D] transition-all duration-300 group-hover:translate-x-1">
         {number}
       </span>
 
-      <h3 className="mt-3 text-2xl font-light text-stone-900">
+      <h3 className="mt-8 text-3xl font-light text-stone-900">
         {title}
       </h3>
 
-      <p className="mt-4 leading-8 text-stone-600">
+      <div className="mt-6 h-px w-16 bg-[#D9B56D]" />
+
+      <p className="mt-8 max-w-sm text-lg leading-8 text-stone-600">
         {description}
       </p>
+
     </article>
   );
 }

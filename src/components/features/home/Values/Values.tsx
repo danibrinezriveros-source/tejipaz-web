@@ -1,29 +1,44 @@
-import Container from "@/src/components/ui/Container";
-import Section from "@/src/components/ui/Section";
+import { Container } from "@/src/components/ui";
+import { spacing, typography } from "@/src/lib/design";
 
-import { values } from "./values.data";
 import ValuesCard from "./ValuesCard";
+import { values } from "./values.data";
 
 export default function Values() {
   return (
-    <Section className="bg-stone-50">
+    <section className={`bg-white ${spacing.section}`}>
       <Container>
-        <div className="mb-16 max-w-3xl">
-          <span className="text-xs uppercase tracking-[0.35em] text-stone-500">
-            Nuestra esencia
+
+        <div className="mx-auto max-w-3xl text-center">
+
+          <span className={typography.label}>
+            NUESTRA ESENCIA
           </span>
 
-          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-light text-stone-900">
-            Lo que sostiene a Tejipaz.
+          <h2 className={`${typography.h2} mt-6`}>
+            Lo que permanece,
+            incluso cuando el café termina.
           </h2>
+
+          <p className={`${typography.body} mt-8`}>
+            Más que una bebida, creemos en una forma de cuidar el territorio,
+            fortalecer la comunidad y preservar la memoria.
+          </p>
+
         </div>
 
-        <div className="grid gap-12 md:grid-cols-3">
+        <div className="mt-24 grid gap-16 lg:grid-cols-3">
+
           {values.map((value) => (
-            <ValuesCard key={value.number} {...value} />
+            <ValuesCard
+              key={value.number}
+              {...value}
+            />
           ))}
+
         </div>
+
       </Container>
-    </Section>
+    </section>
   );
 }

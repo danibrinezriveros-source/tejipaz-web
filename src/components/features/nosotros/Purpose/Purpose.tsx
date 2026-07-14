@@ -2,7 +2,7 @@ import { purpose } from "./purpose.data";
 
 export default function Purpose() {
   return (
-    <section className="bg-stone-950 py-20 lg:py-20 lg:py-32 text-white">
+    <section className="bg-white py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         <span className="text-xs uppercase tracking-[0.35em] text-stone-400">

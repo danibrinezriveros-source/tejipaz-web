@@ -3,7 +3,7 @@ import { history } from "./history.data";
 
 export default function History() {
   return (
-    <section className="bg-white py-20 lg:py-20 lg:py-32">
+    <section className="bg-white py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         <div className="max-w-3xl">
