@@ -1,9 +1,26 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section className="flex min-h-[90vh] lg:min-h-screen items-center justify-center bg-stone-950 text-white">
-      <div className="max-w-5xl px-6 lg:px-8 text-center">
+    <section className="relative flex min-h-[90vh] lg:min-h-screen items-center justify-center overflow-hidden">
 
-        <span className="uppercase tracking-[0.35em] text-stone-400">
+      <Image
+        src="/images/cafe/hero.jpg"
+        alt="Café Tejipaz"
+        fill
+        priority
+        className="object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/45" />
+
+      <div className="relative z-10 max-w-5xl px-6 text-center text-white lg:px-8">
+
+        <span className="text-sm
+uppercase
+tracking-[0.28em]
+font-medium
+text-[#3D2D18] text-stone-200">
           Capítulo III
         </span>
 
@@ -11,12 +28,13 @@ export default function Hero() {
           El café.
         </h1>
 
-        <p className="mx-auto mt-10 max-w-3xl text-xl leading-8 lg:leading-9 text-stone-300">
+        <p className="mx-auto mt-10 max-w-3xl text-xl leading-8 lg:leading-9 text-stone-100">
           Cada taza comienza mucho antes de llegar a tus manos.
           Comienza en una historia.
         </p>
 
       </div>
+
     </section>
   );
 }

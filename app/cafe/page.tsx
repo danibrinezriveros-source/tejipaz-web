@@ -6,6 +6,7 @@ import {
   Process,
   Cup,
   CTA,
+  Catalog,
 } from "@/src/components/features/cafe";
 
 export default function CafePage() {
@@ -14,8 +15,10 @@ export default function CafePage() {
       <Hero />
       <Origin />
       <Process />
+      <Catalog />
       <Cup />
       <CTA />
+      
     </Layout>
   );
 }

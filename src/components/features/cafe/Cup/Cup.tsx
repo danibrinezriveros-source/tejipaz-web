@@ -1,10 +1,20 @@
+import Image from "next/image";
 export default function Cup() {
   return (
-     <section className="bg-white py-20 lg:py-32"> lg:py-32"
+     <section className="bg-white py-20 lg:py-32"> 
 
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:gap-10 lg:gap-20 px-6 lg:px-8 lg:grid-cols-1 lg:grid-cols-1 lg:grid-cols-2">
 
-        <div className="aspect-square rounded-3xl bg-stone-200" />
+        <div className="relative aspect-square overflow-hidden rounded-3xl">
+
+  <Image
+    src="/images/cafe/taza.jpg"
+    alt="Una taza de café Tejipaz"
+    fill
+    className="object-cover transition duration-700 hover:scale-105"
+  />
+
+</div>
 
         <div>
 
