@@ -1,31 +1,56 @@
+"use client";
+
+import { useState } from "react";
+
+import Timeline from "./Timeline";
 import ProcessCard from "./ProcessCard";
 import { process } from "./process.data";
 
 export default function Process() {
+
+  const [activeStep, setActiveStep] = useState<number | null>(null);
+
   return (
-     <section className="bg-white py-20 lg:py-32"> 
+    <section className="bg-white py-20 lg:py-32">
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-        <span className="uppercase tracking-[0.35em] text-stone-500">
-          El proceso
-        </span>
+        <div className="text-center">
 
-        <h2 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-light">
-          Cuatro momentos.
-          Una sola historia.
-        </h2>
+          <span className="uppercase tracking-[0.35em] text-stone-500">
+            El proceso
+          </span>
 
-        <div className="mt-20 grid gap-8 md:grid-cols-1 lg:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4">
+          <h2 className="mt-6 text-3xl md:text-4xl lg:text-[2.8rem] font-light">
+            Cuatro momentos.
+            <br />
+            Una sola historia.
+          </h2>
 
-          {process.map((item)=>(
+        </div>
 
-            <ProcessCard
-              key={item.number}
-              {...item}
-            />
+        <div className="relative mt-24">
 
-          ))}
+          <Timeline
+            activeStep={activeStep}
+            totalSteps={process.length}
+          />
+
+          <div className="relative grid gap-14 md:grid-cols-2 xl:grid-cols-4">
+
+            {process.map((item, index) => (
+
+              <div
+                key={item.number}
+                onMouseEnter={() => setActiveStep(index)}
+                onMouseLeave={() => setActiveStep(null)}
+              >
+                <ProcessCard {...item} />
+              </div>
+
+            ))}
+
+          </div>
 
         </div>
 
