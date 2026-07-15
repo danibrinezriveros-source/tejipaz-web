@@ -12,34 +12,62 @@ export default function TimelineItem({
   last = false,
 }: TimelineItemProps) {
   return (
-    <div className="relative flex gap-8">
+    <article className="group relative flex gap-10">
+
+      {/* Línea */}
 
       <div className="flex w-28 flex-col items-center">
 
-        <div className="h-4 w-4 rounded-full bg-stone-900" />
+        <div
+          className="
+            h-5
+            w-5
+            rounded-full
+            border-2
+            border-[#D9B56D]
+            bg-white
+            transition-all
+            duration-500
+            group-hover:scale-125
+            group-hover:bg-[#D9B56D]
+          "
+        />
 
         {!last && (
-          <div className="mt-2 h-full w-px bg-stone-300" />
+          <div className="mt-3 h-full w-[2px] bg-[#E8D3A5]" />
         )}
 
       </div>
 
-      <div className="pb-20">
+      {/* Contenido */}
 
-        <span className="text-sm uppercase tracking-[0.3em] text-stone-500">
+      <div className="pb-24">
+
+        <span className="text-xs font-semibold uppercase tracking-[0.45em] text-[#D9B56D]">
           {year}
         </span>
 
-        <h3 className="mt-3 text-3xl font-light text-stone-900">
+        <h3
+          className="
+            mt-4
+            text-3xl
+            font-bold
+            leading-tight
+            text-[#3D2D18]
+            transition-colors
+            duration-500
+            group-hover:text-[#D9B56D]
+          "
+        >
           {title}
         </h3>
 
-        <p className="mt-4 max-w-2xl leading-8 text-stone-600">
+        <p className="mt-5 max-w-2xl text-[17px] leading-8 text-[#6E6257]">
           {description}
         </p>
 
       </div>
 
-    </div>
+    </article>
   );
 }
