@@ -1,12 +1,10 @@
 import { Layout } from "@/src/components/layout/Layout";
-import { Hero } from "@/src/components/features/home/Hero";
-import { MemorySection } from "@/src/components/features/home/MemorySection";
+import Home from "@/src/components/features/home/Home";
 
-export default function Home() {
+export default function Page() {
   return (
     <Layout>
-      <Hero />
-      <MemorySection />
+      <Home />
     </Layout>
   );
 }
