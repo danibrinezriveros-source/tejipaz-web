@@ -24,9 +24,9 @@ export default function MemorySection() {
               DESDE GRANADA · ANTIOQUIA
             </span>
 
-            <h2 className={`${typography.title} mt-6 max-w-xl`}>
+            <h2 className={`${typography.display} mt-6 max-w-xl`}>
               Todo comienza con una taza,
-              <br />
+              <br   />
               pero nunca termina ahí.
             </h2>
 
