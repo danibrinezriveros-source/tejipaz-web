@@ -7,7 +7,7 @@ export default function Landscape() {
       {/* Imagen de fondo */}
 
       <Image
-        src="/images/granada/hero.jpg"
+        src="/images/granada/hero-granada.jpg"
         alt="Paisaje de Granada Antioquia"
         fill
         priority
