@@ -13,7 +13,7 @@ export default function Hero() {
         text-white
       "
       style={{
-        backgroundImage: "url('/images/experiencias/hero.jpg')",
+        backgroundImage: "url('/images/experiencias/hero-experiencias.jpg')",
       }}
     >
       {/* Overlay para mejorar la lectura */}
