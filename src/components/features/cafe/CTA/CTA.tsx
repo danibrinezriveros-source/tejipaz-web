@@ -21,9 +21,22 @@ export default function CTA() {
 
         <Link
           href="/experiencias"
-          className="mt-12 inline-flex rounded-full border border-white px-8 py-4 transition hover:bg-white hover:text-stone-900"
-        >
-          Explorar experiencias
+         className="
+                mt-12
+                inline-flex
+                items-center
+                rounded-full
+                border
+                border-stone-900
+                px-8
+                py-4
+                transition-all
+                duration-300
+                hover:bg-stone-900
+                hover:text-white
+              "
+         >
+          Explorar Granada
         </Link>
 
       </div>

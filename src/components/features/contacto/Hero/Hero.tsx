@@ -1,9 +1,24 @@
 export default function Hero() {
   return (
-    <section className="flex min-h-[70vh] items-center justify-center bg-stone-950 text-white">
-      <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
+    <section
+      className="
+        relative
+        flex
+        min-h-[70vh]
+        items-center
+        justify-center
+        bg-[url('/images/contacto/contact-hero.jpg')]
+        bg-cover
+        bg-center
+        text-white
+      "
+    >
+      {/* Capa oscura */}
+      <div className="absolute inset-0 bg-black/45" />
 
-        <span className="text-xs uppercase tracking-[0.35em] text-stone-400">
+      {/* Contenido */}
+      <div className="relative z-10 mx-auto max-w-5xl px-6 lg:px-8 text-center">
+        <span className="text-xs uppercase tracking-[0.35em] text-stone-300">
           Contacto
         </span>
 
@@ -11,10 +26,9 @@ export default function Hero() {
           Conversemos.
         </h1>
 
-        <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 lg:leading-9 text-stone-300">
+        <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-stone-200 lg:leading-9">
           Si quieres vivir la experiencia Tejipaz, estaremos felices de ayudarte.
         </p>
-
       </div>
     </section>
   );

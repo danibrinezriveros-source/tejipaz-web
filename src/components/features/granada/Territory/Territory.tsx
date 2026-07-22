@@ -35,6 +35,7 @@ export default function Territory() {
             src="/images/granada/granada.jpg"
             alt="Montañas de Granada"
             fill
+
             priority
             sizes="(max-width:768px) 100vw, 50vw"
             className="
@@ -56,7 +57,7 @@ export default function Territory() {
             className="
               absolute
               bottom-8
-              left-8
+              right-8
               overflow-hidden
               rounded-2xl
               border

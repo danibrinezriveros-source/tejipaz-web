@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/src/components/ui";
 import { spacing, typography } from "@/src/lib/design";
-
+import Link from "next/link"
 export default function MemorySection() {
   return (
     <section className={`bg-stone-50 ${spacing.section}`}>
@@ -35,11 +35,18 @@ export default function MemorySection() {
               Cada café representa el trabajo de familias, la riqueza de
               Granada y el deseo de compartir aquello que permanece
               cuando el tiempo pasa.
+
             </p>
 
-            <button
-              className="
+
+
+              <Link
+             href="/nosotros"
+
+                className="
                 mt-12
+                inline-flex
+                items-center
                 rounded-full
                 border
                 border-stone-900
@@ -50,9 +57,13 @@ export default function MemorySection() {
                 hover:bg-stone-900
                 hover:text-white
               "
-            >
-              Conocer nuestra historia
-            </button>
+             >
+             Explorar experiencias
+             
+               </Link>
+           
+            
+            
 
           </div>
 

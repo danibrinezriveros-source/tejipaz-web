@@ -16,10 +16,13 @@ export default function Experiences() {
 
         <div className="mt-20 grid gap-8 lg:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-          {experiences.map((item) => (
+          {experiences.map((item,) => (
             <ExperienceCard
+            
               key={item.title}
+              
               {...item}
+              
             />
           ))}
 
